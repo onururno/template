@@ -1,1 +1,1 @@
-alert("Im looking for you!!!");
+import "../styles/styles.css";
