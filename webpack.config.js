@@ -1,6 +1,7 @@
 const path = require("path"); //it will generate an absolute path to the correct folder
 
 const postCSSPlugins = [
+  require("postcss-import"),
   require("postcss-simple-vars"),
   require("postcss-nested"),
   require("autoprefixer"),
@@ -19,7 +20,7 @@ module.exports = {
       {
         test: /\.css$/i, //works only if it pass .css
         use: [
-          "style-loader?url=false", //refresh the style
+          "style-loader", //refresh the style
           "css-loader", //refresh css
           { loader: "postcss-loader", options: { plugins: postCSSPlugins } },
         ],
