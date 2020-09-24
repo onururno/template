@@ -2,6 +2,7 @@ const path = require("path"); //it will generate an absolute path to the correct
 
 const postCSSPlugins = [
   require("postcss-import"),
+  require("postcss-mixins"),
   require("postcss-simple-vars"),
   require("postcss-nested"),
   require("autoprefixer"),
