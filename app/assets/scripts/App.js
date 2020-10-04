@@ -10,7 +10,6 @@ new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 new MobileMenu();
 let modal;
 
-//seperate file for html which triggers by clicking
 document.querySelectorAll(".open-modal").forEach((el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
